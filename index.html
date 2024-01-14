@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Aceleradora</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="nameListContainer">
+        <img class="personImg" src="./assets/person.jpg" alt="" />
+        <h2>Patrick Reis</h2>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          pellentesque ut felis ac consectetur.
+        </span>
+        <li class="link"><a href="">Link 1</a></li>
+        <li class="link"><a href="">Link 2</a></li>
+        <li class="link"><a href="">Link 3</a></li>
+        <li class="link"><a href="">Link 4</a></li>
+      </div>
+      <div class="toDoMainContainer">
+        <h1>To-do List</h1>
+        <div class="toDoContainer">
+          <div class="taskBoardContainer">
+            <h2>Tarefas do Dia</h2>
+            <ul class="taskList" id="taskList-dia"></ul>
+            <div class="addTask" id="addTask-dia">
+              <input class="inputTask" type="text" placeholder="Nova tarefa" />
+              <button
+                class="btnAdd"
+                onclick="addTask('taskList-dia', 'addTask-dia')"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+          <div class="taskContainer">
+            <h2>Tarefas da Noite</h2>
+            <ul class="taskList" id="taskList-noite"></ul>
+            <div class="addTask" id="addTask-noite">
+              <input class="inputTask" type="text" placeholder="Nova tarefa" />
+              <button
+                class="btnAdd"
+                onclick="addTask('taskList-noite', 'addTask-noite')"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

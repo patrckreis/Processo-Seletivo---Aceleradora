@@ -1,0 +1,132 @@
+body {
+  margin: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nameListContainer {
+  width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  margin: 20px;
+}
+.personImg {
+  width: 50%;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: #00c8ff;
+}
+
+.link {
+  list-style: none;
+  background: white;
+  height: 20px;
+  border: 1px solid #00c8ff;
+  width: 100px;
+  box-shadow: none;
+  justify-content: center;
+}
+
+.toDoMainContainer {
+  width: 800px;
+  background-color: #00c8ff;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.toDoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+  border-radius: 5px;
+  margin: 5px;
+  margin: 0;
+  padding: 0 10px 0 5px;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+ul {
+  padding: 0;
+  word-wrap: break-word;
+}
+.toDoList {
+  padding: 0;
+  margin: 0;
+}
+
+.btnAdd,
+.btnRemove {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00c8ff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 2px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btnAdd:hover,
+.btnRemove:hover {
+  background-color: #fff;
+  color: #00c8ff;
+  border: 2px solid #00c8ff;
+  box-shadow: 5px 5px 0px #00c8ff;
+}
+
+.btnAdd:active,
+.btnRemove:active {
+  background-color: #00c8ff;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.inputTask {
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  border: none;
+}
+
+.addTask {
+  margin-bottom: 50px;
+}
